@@ -1,0 +1,165 @@
+
+
+<!--  *** Disclaimer ***
+
+ - Validation has been performed using W3C’s CSS validator 
+for the style.css file and W3C’s HTML validator for all .html files.
+
+ - .html files can’t be validated using W3C’s CSS validator (Error: Operation not permitted), 
+ as it is requested in Element 2 brief:
+“Validation test should be carried out on ALL PAGES by using W3C’s CSS Validator”.
+ -->
+
+<!-- *** About Us *** -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head section -->
+<head>
+<!-- meta and title -->
+	<meta charset="utf-8"/>
+	<meta name="description" content="Free tutorial of touchscreen technology">
+	<meta name="keywords" content="touchscreen, tablet, smartphone, tutorial, lessons, technology">
+	<meta name="author" content="Dragos-Gabriel Vornicu">
+	
+	<!-- CSS Stylesheet Link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<title>About Us</title>
+</head> 
+<!-- End of Head section -->
+
+<!-- *********************************************************************************************************** -->
+<!-- *********************************************************************************************************** -->
+<!-- *********************************************************************************************************** -->
+
+
+<!-- Body section-->
+<body>
+
+
+<!-- header section: top line, logo, main menu -->
+<header>
+	<!-- Top line grey - background for UWL logo white -->
+	<div id="bg_top">
+		<div id="top_width">
+			<img src="images/uwl_logo_main_white.png" alt="university_of_west_london_logo">
+		</div>
+	</div>
+
+	<!-- Main Menu -->
+	<div id="container_head">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li id="nav_on">About</li>
+				<li><a href="lesson.html">Lessons</a></li>
+				<li><a href="quizz.html">Quizzes</a></li>
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<hr class="nav_under">
+</header>
+
+
+<!-- **************************************************************************************** -->
+<!-- Main section -->
+
+
+<main>
+	<div class="mainContainer">
+		<div class="heading_bg_pos heading_color_1"></div>
+		<div class="about_us_text">
+			
+				<h1>About Us</h1> 
+				
+			<div class="about_us_para">
+				<p>This website has an educational purpose and is focusing on the touchscreen technology. The <a href="lesson.html">Lessons chapter</a> of this website is divided in 3 articles (lessons).</p>
+				<ol>
+					<li>
+						<p><a href="lesson.html#lesson_1">First lesson</a> will introduce you to the general idea of the touchscreen technology and where this technology can be found.</p>
+					</li>
+					<li>
+						<p>The <a href="lesson.html#lesson_2">second lesson</a> is dedicated to the history of touchscreen technology, in which we tried to pin-point few dates and names related with the development of these technology. </p>
+					</li>
+					<li>
+						<p>In the <a href="lesson.html#lesson_3">third lesson</a> you will find some more in depth information about how the touchscreen technology is working. This lesson is accompanied with a detailed 
+						<a href="lesson.html#full_video">animated video</a> which will help you having a better understanding of this technology.</p>
+					</li>
+				</ol>
+				
+				<p>We hope you will enjoy and get the most from our lessons!<br>
+				Good luck!
+			</div>
+			
+		</div>	
+		
+		<div class="about_us_img">		
+			<img src="images/about_us_main.png" alt="touchscreen">
+		</div>	
+	</div>	
+</main>
+
+
+
+<!-- **************************************************************************************** -->
+<!-- Footer section -->
+<footer>
+		<div id="centre_footer">
+			<section class="footer_grid">
+				<h2 class="not_visible">UWL Logo</h2> <!-- work @ validation issue -->
+				
+				<!-- UWL Logo Footer -->
+				<img id="logo_footer" src="images/uwl_logo.png" alt="UWL-Logo">
+			</section>
+			
+			<!-- Company section footer -->
+			<section class="footer_grid">
+				<h3>Company</h3>
+				<h4>University of West London</h4>
+				<div>
+					<a href="https://www.uwl.ac.uk/" target="_blank">UWL Website</a>
+					<address>
+						St Mary Road<br>
+						Ealing<br>
+						London, UK<br>
+						W5 5RF<br>
+					</address>
+				</div>
+			</section>		
+
+			<!-- Student section footer -->	
+			<section class="footer_grid">
+				<h3>Student</h3>
+				<h4>Dragos-Gabriel Vornicu</h4>
+					<div>
+						Student<br>
+						Level 3<br>
+						ID: 21490251<br>
+						Computer Science with Foundation<br>
+						University of West London<br>
+					</div>
+			</section>		
+
+			<!-- Validation section footer -->
+			<section id="footer_grid_last">	
+				<h3>W3C Validation</h3>
+				<a href="validation/validation_proof/html_about_us_validation.pdf" target="_blank">
+					<img height="50" src="validation/W3C_HTML5_certified.png" alt="Valid_HTML5!">
+				</a>
+				<a href="validation/validation_proof/css_style_proof.pdf" target="_blank">
+					<img height="50" src="validation/W3C_CSS_certified.png" alt="Valid_HTML5!">
+				</a>
+			</section>
+		</div>	
+</footer>
+<div id="bottom_line"></div> <!-- dark grey line bottom -->
+
+</body>
+<!-- End of body section -->
+
+</html>  

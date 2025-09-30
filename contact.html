@@ -1,0 +1,195 @@
+
+
+<!--  *** Disclaimer ***
+
+ - Validation has been performed using W3C’s CSS validator 
+for the style.css file and W3C’s HTML validator for all .html files.
+
+ - .html files can’t be validated using W3C’s CSS validator (Error: Operation not permitted), 
+ as it is requested in Element 2 brief:
+“Validation test should be carried out on ALL PAGES by using W3C’s CSS Validator”.
+ -->
+
+
+<!-- *** Contact *** -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head section -->
+<head>
+<!-- meta and title -->
+	<meta charset="utf-8"/>
+	<meta name="description" content="Free tutorial of touchscreen technology">
+	<meta name="keywords" content="touchscreen, tablet, smartphone, tutorial, lessons, technology">
+	<meta name="author" content="Dragos-Gabriel Vornicu">
+	
+	<!-- CSS Stylesheet Link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="myScript.js"></script>
+
+	<title>Contact</title>
+</head> 
+<!-- End of Head section -->
+
+<!-- *********************************************************************************************************** -->
+<!-- *********************************************************************************************************** -->
+<!-- *********************************************************************************************************** -->
+
+
+
+<!-- Body section-->
+<body>
+
+<!-- header section: top line, logo, main menu -->
+<header>
+	<!-- Top line grey - background for UWL logo white -->
+	<div id="bg_top">
+		<div id="top_width">
+			<img src="images/uwl_logo_main_white.png" alt="university_of_west_london_logo">
+		</div>
+	</div>
+
+	<!-- Main Menu -->
+	<div id="container_head">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about_us.html">About</a></li>
+				<li><a href="lesson.html">Lessons</a></li>
+				<li><a href="quizz.html">Quizzes</a></li>
+				<li><a href="resources.html">Resources</a></li>
+				<li id="nav_on">Contact</li>
+			</ul>
+		</nav>
+	</div>
+
+	<hr class="nav_under">
+</header>
+
+
+<!-- **************************************************************************************** -->
+<!-- Main section -->
+
+<main>
+	<div class="mainContainer">
+	<div class="heading_bg_pos heading_color_7"></div>
+		<div class="border_left">
+			<h1>Contact</h1><br>
+
+			<p>Please feel free to contact us by filling the forms below:</p><br>
+
+			<!-- Forms -->
+			  <form id="contactForm" class="contact_grid" onsubmit="event.preventDefault();return checkForm();" action="#">
+			  
+				<!-- First name -->
+				<div id="f_name_0">
+					<label for="fname">First Name:</label><br>
+					<input type="text" id="fname" name="firstname" placeholder="Your first name">
+				</div>
+				
+				<div id="l_name_1">
+					<!-- Last name -->
+					<label for="lname">Last Name:</label><br>
+					<input type="text" id="lname" name="lastname" placeholder="Your sur name">
+				</div>
+				
+				<div id="phone_2">
+					<!-- Phone -->
+					<label for="phone">Your phone number:</label><br>
+					<input type="tel" id="phone" name="phone" placeholder="Phone no.">
+				</div>
+					
+				<div id="email_3">	
+					<!-- Email -->	
+					<label for="email">Your email:</label><br>
+					<input type="email" id="email" name="email" placeholder="Email">
+				</div>
+
+				<div id="text_4">
+					<!-- Status -->
+					<label for="statusPick">Select your status:</label>
+					<select id="statusPick" name="status">
+						<option value="" selected="selected">--------</option>
+						<option value="student">Student</option>
+						<option value="teacher">Teacher</option>
+						<option value="other">Other</option>
+					</select><br>
+					<br>
+					
+					<!-- Text area -->
+					<label for="message">Subject:</label><br>
+					<textarea id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
+					<br>
+
+					<!-- Reset and submit buttons -->
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+				</div>
+			  </form>
+		</div>
+		 
+		 <!-- Google Map -->
+		 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.3448729869624!2d-0.30539128409030847!3d51.50688861856129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760df3035c5dfd%3A0x422f2334ccf21438!2sUniversity%20of%20West%20London!5e0!3m2!1sen!2suk!4v1651245539837!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+ </main>
+ 
+
+<!-- **************************************************************************************** -->
+<!-- Footer section -->
+	
+<footer>
+		<div id="centre_footer">
+			<section class="footer_grid">
+				<h2 class="not_visible">UWL Logo</h2> <!-- work @ validation issue -->
+				
+				<!-- UWL Logo Footer -->
+				<img id="logo_footer" src="images/uwl_logo.png" alt="UWL-Logo">
+			</section>
+			
+			<!-- Company section footer -->
+			<section class="footer_grid">
+				<h3>Company</h3>
+				<h4>University of West London</h4>
+				<div>
+					<a href="https://www.uwl.ac.uk/" target="_blank">UWL Website</a>
+					<address>
+						St Mary Road<br>
+						Ealing<br>
+						London, UK<br>
+						W5 5RF<br>
+					</address>
+				</div>
+			</section>		
+
+			<!-- Student section footer -->	
+			<section class="footer_grid">
+				<h3>Student</h3>
+				<h4>Dragos-Gabriel Vornicu</h4>
+					<div>
+						Student<br>
+						Level 3<br>
+						ID: 21490251<br>
+						Computer Science with Foundation<br>
+						University of West London<br>
+					</div>
+			</section>		
+
+			<!-- Validation section footer -->
+			<section id="footer_grid_last">	
+				<h3>W3C Validation</h3>
+				<a href="validation/validation_proof/html_contact_validation.pdf" target="_blank">
+					<img height="50" src="validation/W3C_HTML5_certified.png" alt="Valid_HTML5!">
+				</a>
+				<a href="validation/validation_proof/css_style_proof.pdf" target="_blank">
+					<img height="50" src="validation/W3C_CSS_certified.png" alt="Valid_HTML5!">
+				</a>
+			</section>
+		</div>	
+</footer>
+<div id="bottom_line"></div> <!-- dark grey line bottom -->
+
+</body>
+<!-- End of body section -->
+
+</html>  

@@ -1,0 +1,196 @@
+
+
+
+<!--  *** Disclaimer ***
+
+ - Validation has been performed using W3C’s CSS validator 
+for the style.css file and W3C’s HTML validator for all .html files.
+
+ - .html files can’t be validated using W3C’s CSS validator (Error: Operation not permitted), 
+ as it is requested in Element 2 brief:
+“Validation test should be carried out on ALL PAGES by using W3C’s CSS Validator”.
+ -->
+
+
+<!-- *** Home Page *** -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head section -->
+<head>
+	<!-- meta and title -->
+	<meta charset="utf-8"/>
+	<meta name="description" content="Free tutorial of touchscreen technology">
+	<meta name="keywords" content="touchscreen, tablet, smartphone, tutorial, lessons, technology">
+	<meta name="author" content="Dragos-Gabriel Vornicu">
+	
+	<!-- CSS Stylesheet Link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Touchscreen Tutorial - Home</title>
+</head> 
+<!-- End of Head section -->
+
+<!-- *********************************************************************************************************** -->
+<!-- *********************************************************************************************************** -->
+<!-- *********************************************************************************************************** -->
+
+
+<!-- Body section-->
+<body>
+
+
+<!-- header section: top line, logo, main menu -->
+<header>
+	<!-- Top line grey - background for UWL logo white -->
+	<div id="bg_top">
+		<div id="top_width">
+			<img src="images/uwl_logo_main_white.png" alt="university_of_west_london_logo">
+		</div>
+	</div>
+
+	<!-- Main Menu -->
+	<div id="container_head">
+		<nav>
+			<ul>
+				<li id="nav_on">Home</li>
+				<li><a href="about_us.html">About</a></li>
+				<li><a href="lesson.html">Lessons</a></li>
+				<li><a href="quizz.html">Quizzes</a></li>
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<hr class="nav_under">
+</header>
+
+
+
+
+<!-- ***************************** Main Section **************************************** -->
+
+
+<main>
+
+	<!-- Title and Big Button -->
+	<hr class="divider_home_top">
+	
+	<h1 class="title_home">Learn about Touchscreen Technology</h1>
+	<a id="home_btn_main" href="lesson.html">Explore our Lessons about Touchscreen Technology 
+		<img src="images/arrow-right.png" alt="arrow-right">
+	</a>	
+	
+	<hr class="divider_home_middle">	
+
+
+	<!-- Articles -->
+	<section class="articles_grid">
+		<h2 class="not_visible">Lessons about touchscreen technlology</h2> <!-- work @ a validation issue -->
+		<div class="home_article">
+			<a href="lesson.html#lesson_1">
+				<img src="images/what_is_a_touchscreen.jpg" alt="touchscreen-image">
+				<article>
+					<h2>What is a Touchscreen</h2>
+					<p>	The touchscreen, also referred to as touch screen, is a technology that allows the user to provide 
+						input (as a touch panel) and also to obtain output (as a display) in the process of interaction with 
+						a computational device... <span class="read_more">read more</span>
+					</p>
+				</article>
+			</a>
+		</div>
+		
+		<div class="home_article">
+			<a href="lesson.html#lesson_2">
+				<img src="images/history_of_touchscreen.jpg" alt="old-image-of-a-touchscreen">
+				<article>
+					<h2>History of Touchscreen</h2>
+					<p>	Although there are various ideas and patents recorded as the first touchscreen developed, such as the 
+						device developed by AT&T Corporation in 1962, under the name of 'Electrographic transmitter', generally, 
+						the invention... <span class="read_more">read more</span>
+					</p>
+				</article>
+			</a>
+		</div>
+		
+		<div class="home_article">
+			<a href="lesson.html#lesson_3">
+				<img src="images/touchscreen_technology.jpg" alt="touching-a-circuit-board">
+				<article>
+					<h2>Touchscreen Technology</h2>
+					<p>	There are 3 elements that form a touchscreen: toughened glass, capacitive touchscreen and OLED 
+						(Organic Light Emitting Diode) display. These elements are assembled one on top of the other. 
+						The top layer is made of... <span class="read_more">read more</span>
+					</p>
+				</article>
+			</a>
+		</div>
+	</section>
+	
+	
+	<!-- Background Style -->
+	<!-- <div class="home_bg_color heading_color_3"></div> -->
+	
+</main>
+
+
+<!-- **************************************************************************************** -->
+<!-- Footer section -->
+	
+<footer>
+		<div id="centre_footer">
+			<section class="footer_grid">
+				<h2 class="not_visible">UWL Logo</h2> <!-- work @ validation issue -->
+				
+				<!-- UWL Logo Footer -->
+				<img id="logo_footer" src="images/uwl_logo.png" alt="UWL-Logo">
+			</section>
+			
+			<!-- Company section footer -->
+			<section class="footer_grid">
+				<h3>Company</h3>
+				<h4>University of West London</h4>
+				<div>
+					<a href="https://www.uwl.ac.uk/" target="_blank">UWL Website</a>
+					<address>
+						St Mary Road<br>
+						Ealing<br>
+						London, UK<br>
+						W5 5RF<br>
+					</address>
+				</div>
+			</section>		
+
+			<!-- Student section footer -->	
+			<section class="footer_grid">
+				<h3>Student</h3>
+				<h4>Dragos-Gabriel Vornicu</h4>
+					<div>
+						Student<br>
+						Level 3<br>
+						ID: 21490251<br>
+						Computer Science with Foundation<br>
+						University of West London<br>
+					</div>
+			</section>		
+
+			<!-- Validation section footer -->
+			<section id="footer_grid_last">	
+				<h3>W3C Validation</h3>
+				<a href="validation/validation_proof/html_index_validation.pdf" target="_blank">
+					<img height="50" src="validation/W3C_HTML5_certified.png" alt="Valid_HTML5!">
+				</a>
+				<a href="validation/validation_proof/css_style_proof.pdf" target="_blank">
+					<img height="50" src="validation/W3C_CSS_certified.png" alt="Valid_HTML5!">
+				</a>
+			</section>	
+		</div>	
+</footer>
+<div id="bottom_line"></div> <!-- dark grey line bottom -->
+
+
+</body>
+<!-- End of body section -->
+
+</html>  

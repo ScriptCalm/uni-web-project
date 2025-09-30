@@ -1,0 +1,308 @@
+
+
+<!--  *** Disclaimer ***
+
+ - Validation has been performed using W3C’s CSS validator 
+for the style.css file and W3C’s HTML validator for all .html files.
+
+ - .html files can’t be validated using W3C’s CSS validator (Error: Operation not permitted), 
+ as it is requested in Element 2 brief:
+“Validation test should be carried out on ALL PAGES by using W3C’s CSS Validator”.
+ -->
+
+<!-- *** Quizzes *** -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head section -->
+<head>
+<!-- meta and title -->
+	<meta charset="utf-8"/>
+	<meta name="description" content="Free tutorial of touchscreen technology">
+	<meta name="keywords" content="touchscreen, tablet, smartphone, tutorial, lessons, technology">
+	<meta name="author" content="Dragos-Gabriel Vornicu">
+	
+	<!-- CSS Stylesheet Link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="myScript.js" defer></script>
+	
+	<title>Quizzes</title>
+</head> 
+<!-- End of Head section -->
+
+<!-- *********************************************************************************************************** -->
+<!-- *********************************************************************************************************** -->
+<!-- *********************************************************************************************************** -->
+
+
+<!-- Body section-->
+<body>
+
+<!-- header section: top line, logo, main menu -->
+<header>
+	<!-- Top line grey - background for UWL logo white -->
+	<div id="bg_top">
+		<div id="top_width">
+			<img src="images/uwl_logo_main_white.png" alt="university_of_west_london_logo">
+		</div>
+	</div>
+
+	<!-- Main Menu -->
+	<div id="container_head">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about_us.html">About</a></li>
+				<li><a href="lesson.html">Lessons</a></li>
+				<li id="nav_on">Quizzes</li>
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<hr class="nav_under">
+</header>
+
+
+
+<!-- **************************************************************************************** -->
+<!-- Main section -->
+
+
+<main>
+	<div class="quizz_bg_pos_1 heading_color_4"></div>
+
+	<h1 class="quizz_h1">Quizzes</h1>
+	<p>Now that you went through our lessons, test your knowledge on the topic with our quizzes.<br>
+		Good luck!</p>
+	<div class="quizz_mainContainer">
+		
+		<!-- Quizz Lesson 1 -->
+		
+			<form id="form_1" onsubmit="event.preventDefault(); quizzLesson(form1, answer1, answer2, answer3, incorrectMsg1, q11msg, q12msg, q13msg);">
+				<h2>Quizz Lesson 1</h2>
+			<!-- Question 1.1 -->
+				<br><b>What is the touch-screen technology used for?</b><br>
+				
+				<input type="radio" id="q111" name="q1" value="sleeping">
+				<label for="q111">a. Sleeping</label><br>
+			
+				<input type="radio" id="q112" name="q1" value="measurements">
+				<label for="q112">b. Measurements</label><br>
+			
+				<input type="radio" id="q113" name="q1" value="c. Interacting with various devices">
+				<label for="q113">c. Interacting with various devices </label><br>
+				
+				<input type="radio" id="q114" name="q1" value="none of the above">
+				<label for="q114">d. None of the above</label><br>
+				<p id="aq11" class="q_feedback"></p><br>
+			
+			<!-- Question 1.2 -->
+				<b>What can you do with the <br>touch-screen technology?</b><br>
+				
+				<input type="radio" id="q121" name="q2" value="Provide input">
+				<label for="q121">a. Provide input</label><br>
+			
+				<input type="radio" id="q122" name="q2" value="Obtain output">
+				<label for="q122">b. Obtain output</label><br>
+			
+				<input type="radio" id="q123" name="q2" value="Both of the above">
+				<label for="q123">c. Both of the above</label><br>
+				
+				<input type="radio" id="q124" name="q2" value="None of the above">
+				<label for="q124">d. None of the above</label><br>
+				<p id="aq12" class="q_feedback"></p><br>
+				
+			<!-- Question 1.3 -->	
+				<b>Where can we find touch-screens?</b><br>
+				<input type="radio" id="q131" name="q3" value="Fully mechanical watches">
+				<label for="q131">a. Fully mechanical watches</label><br>
+			
+				<input type="radio" id="q132" name="q3" value="E-books">
+				<label for="q132">b. E-books</label><br>
+			
+				<input type="radio" id="q133" name="q3" value="POS machines">
+				<label for="q133">c. POS machines</label><br>
+				
+				<input type="radio" id="q134" name="q3" value="Both b and c option">
+				<label for="q134">d. Both b and c options</label><br>
+				<p id="aq13" class="q_feedback"></p><br>
+				<br>
+				<input type="submit" value="Submit">
+			</form>
+		
+			
+		<!-- Quizz Lesson 2 -->	
+		
+			<form id="form_2" onsubmit="event.preventDefault(); quizzLesson(form2, answer4, answer5, answer6, incorrectMsg2, q21msg, q22msg, q23msg);">
+				<h2>Quizz Lesson 2</h2>
+			<!-- Question 2.1 -->
+				<br><b>When was the first touch screen system invented?</b><br>
+				
+				<input type="radio" id="q211" name="q1" value="1950">
+				<label for="q211">a. 1950</label><br>
+			
+				<input type="radio" id="q212" name="q1" value="1965">
+				<label for="q212">b. 1965</label><br>
+			
+				<input type="radio" id="q213" name="q1" value="1812">
+				<label for="q213">c. 1812</label><br>
+				
+				<input type="radio" id="q214" name="q1" value="1983">
+				<label for="q214">d. 1983</label><br>
+				<p id="aq21" class="q_feedback"></p><br>
+			
+			<!-- Question 2.2 -->
+				<b>Who is recognised as the inventor of the first touch screen system?</b><br>
+				
+				<input type="radio" id="q221" name="q2" value="Thomas Edison">
+				<label for="q221">a. Thomas Edison</label><br>
+			
+				<input type="radio" id="q222" name="q2" value="Nikola Tesla">
+				<label for="q222">b. Nikola Tesla</label><br>
+			
+				<input type="radio" id="q223" name="q2" value="Eric Johnson">
+				<label for="q223">c. Eric Johnson </label><br>
+				
+				<input type="radio" id="q224" name="q2" value="Johannes Gutenberg">
+				<label for="q224">d. Johannes Gutenberg</label><br>
+				<p id="aq22" class="q_feedback"></p><br>
+				
+			<!-- Question 2.3 -->	
+				<b>When was invented the first multi-touch display?</b><br>
+				
+				<input type="radio" id="q231" name="q3" value="1930">
+				<label for="q231">a. 1930</label><br>
+			
+				<input type="radio" id="q232" name="q3" value="1995">
+				<label for="q232">b. 1995</label><br>
+			
+				<input type="radio" id="q233" name="q3" value="1960">
+				<label for="q233">c. 1960</label><br>
+				
+				<input type="radio" id="q234" name="q3" value="1982">
+				<label for="q234">d. 1982</label><br>
+				<p id="aq23" class="q_feedback"></p><br>
+				
+				<input type="submit" value="Submit">
+			</form>
+		
+		
+		<!-- Quizz Lesson 3 -->	
+		
+			<form id="form_3" onsubmit="event.preventDefault(); quizzLesson(form3, answer7, answer8, answer9, incorrectMsg3, q31msg, q32msg, q33msg);">
+				<h2>Quizz Lesson 3</h2>
+			<!-- Question 3.1 -->
+				<br><b>Which one is an element of a touch-screen?</b><br>
+				
+				<input type="radio" id="q311" name="q1" value="toughened glass">
+				<label for="q311">a. toughened glass</label><br>
+			
+				<input type="radio" id="q312" name="q1" value="capacitive touch-screen">
+				<label for="q312">b. capacitive touch-screen</label><br>
+			
+				<input type="radio" id="q313" name="q1" value="display">
+				<label for="q313">c. display</label><br>
+				
+				<input type="radio" id="q314" name="q1" value="all of the above">
+				<label for="q314">d. all of the above</label><br>
+				<p id="aq31" class="q_feedback"></p><br>
+				
+			<!-- Question 3.2 -->
+				<b>Which element detects tactile presence?</b><br>
+				
+				<input type="radio" id="q321" name="q2" value="toughened glass">
+				<label for="q321">a. toughened glass</label><br>
+			
+				<input type="radio" id="q322" name="q2" value="capacitive touch-screen">
+				<label for="q322">b. capacitive touch-screen</label><br>
+			
+				<input type="radio" id="q323" name="q2" value="display">
+				<label for="q323">c. display</label><br>
+				
+				<input type="radio" id="q324" name="q2" value="none of the above">
+				<label for="q324">d. none of the above</label><br>
+				<p id="aq32" class="q_feedback"></p><br><br>
+				
+			<!-- Question 3.3 -->	
+				<b>Which colours are forming a pixel?</b><br>
+				
+				<input type="radio" id="q331" name="q3" value="red, blue and green ">
+				<label for="q331">a. red, blue and green</label><br>
+			
+				<input type="radio" id="q332" name="q3" value="white, black and red">
+				<label for="q332">b. white, black and red</label><br>
+			
+				<input type="radio" id="q333" name="q3" value="yellow, red and blue">
+				<label for="q333">c. yellow, red and blue</label><br>
+				
+				<input type="radio" id="q334" name="q3" value="blue, black and yellow">
+				<label for="q334">d. blue, black and yellow</label><br>
+				<p id="aq33" class="q_feedback"></p><br>
+				<br>
+				<input type="submit" value="Submit">
+			</form>	 
+	</div>
+</main>
+
+
+<!-- **************************************************************************************** -->
+<!-- Footer section -->
+	
+<footer>
+		<div id="centre_footer">
+			<section class="footer_grid">
+				<h2 class="not_visible">UWL Logo</h2> <!-- work @ validation issue -->
+				
+				<!-- UWL Logo Footer -->
+				<img id="logo_footer" src="images/uwl_logo.png" alt="UWL-Logo">
+			</section>
+			
+			<!-- Company section footer -->
+			<section class="footer_grid">
+				<h3>Company</h3>
+				<h4>University of West London</h4>
+				<div>
+					<a href="https://www.uwl.ac.uk/" target="_blank">UWL Website</a>
+					<address>
+						St Mary Road<br>
+						Ealing<br>
+						London, UK<br>
+						W5 5RF<br>
+					</address>
+				</div>
+			</section>		
+
+			<!-- Student section footer -->	
+			<section class="footer_grid">
+				<h3>Student</h3>
+				<h4>Dragos-Gabriel Vornicu</h4>
+					<div>
+						Student<br>
+						Level 3<br>
+						ID: 21490251<br>
+						Computer Science with Foundation<br>
+						University of West London<br>
+					</div>
+			</section>		
+
+			<!-- Validation section footer -->
+			<section id="footer_grid_last">	
+				<h3>W3C Validation</h3>
+				<a href="validation/validation_proof/html_quizz_validation.pdf" target="_blank">
+					<img height="50" src="validation/W3C_HTML5_certified.png" alt="Valid_HTML5!">
+				</a>
+				<a href="validation/validation_proof/css_style_proof.pdf" target="_blank">
+					<img height="50" src="validation/W3C_CSS_certified.png" alt="Valid_HTML5!">
+				</a>
+			</section>	
+		</div>	
+</footer>
+<div id="bottom_line"></div> <!-- dark grey line bottom -->
+<script src="myScript.js"></script>
+</body>
+<!-- End of body section -->
+
+</html>  
