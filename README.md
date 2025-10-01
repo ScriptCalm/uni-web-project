@@ -30,4 +30,7 @@ The site includes lessons, quizzes, resources, and a contact page, along with au
 > The quiz for **Lesson 1** has been fully automated using **Cypress**.  
 > The test script (`quiz.cy.js`) verifies that correct answers are marked with positive feedback and incorrect answers trigger the appropriate error messages.  
 > This ensures that the quiz logic behaves as expected and provides immediate validation feedback to the user.
+>
+> <img width="733" height="464" alt="image" src="https://github.com/user-attachments/assets/d6e61385-4f55-438e-9277-ca5e222fb9b2" />
+
 
